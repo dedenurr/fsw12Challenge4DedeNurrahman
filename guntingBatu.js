@@ -51,6 +51,7 @@ pilihanPemain.forEach(function (i) {
   });
 });
 
+//manipulasi reset game kertas gunting batu
 const tombol = document.querySelector('#refresh');
 tombol.onclick = function () {
   const vs = document.querySelector('#vs');
