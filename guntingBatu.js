@@ -18,6 +18,7 @@ function getHasil(komputer, pemain) {
 function acak() {
   const gambarKomputer = document.querySelector('.komputerPilihan');
   const gambar = ['batu', 'kertas', 'gunting'];
+
   let i = 0;
   const waktuAwal = new Date().getTime();
   setInterval(function () {
@@ -26,6 +27,8 @@ function acak() {
       return;
     }
     gambarKomputer.setAttribute('src', 'assets/' + gambar[i++] + '.png');
+    gambarKomputer.style.backgroundColor = 'gray';
+    gambarKomputer.style.boxShadow = '0px 0px 3px 3px rgb(159, 167, 159)';
     if (i == gambar.length) i = 0;
   }, 100);
 }
@@ -44,7 +47,10 @@ pilihanPemain.forEach(function (i) {
     //menjalankan set time out setelah fungsi putar
     setTimeout(function () {
       const gambarKomputer = document.querySelector('.komputerPilihan');
+
       gambarKomputer.setAttribute('src', 'assets/' + pKomputer + '.png');
+      gambarKomputer.style.backgroundColor = 'gray';
+      gambarKomputer.style.boxShadow = '0px 0px 3px 3px rgb(159, 167, 159)';
       const vs = document.querySelector('#vs');
       vs.innerHTML = `<p class="pemenang">${hasil}</p>`;
     }, 1000);
