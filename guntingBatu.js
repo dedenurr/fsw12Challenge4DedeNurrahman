@@ -51,6 +51,7 @@ pilihanPemain.forEach(function (i) {
   });
 });
 
+//manipulasi reset game
 const tombol = document.querySelector('#refresh');
 tombol.onclick = function () {
   const vs = document.querySelector('#vs');
