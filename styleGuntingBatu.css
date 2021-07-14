@@ -52,6 +52,7 @@
   text-align: center;
   align-self: center;
   color: #bd0000;
+
   font-size: 5em;
   font-weight: bold;
 }
@@ -91,6 +92,7 @@
   width: 135px;
   height: 70px;
   background-color: darkgreen;
+  box-shadow: 0px 0px 3px 3px rgb(159, 167, 159);
   color: white;
   font-size: 20px;
   margin: 3% auto;
